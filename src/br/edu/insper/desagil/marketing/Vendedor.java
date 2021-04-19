@@ -2,11 +2,11 @@ package br.edu.insper.desagil.marketing;
 import java.util.List;
 
 public class Vendedor extends Usuario {
-private List<Produto> produtos;
+	private List<Produto> produtos;
+	private String nome;
 	
 	public Vendedor(String nome, List<Video> videos, List<Produto> produtos) {
-		super(nome);
-		super(videos);
+		super(nome, videos);
 		this.produtos = produtos;
 	}
 	
