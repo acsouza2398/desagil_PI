@@ -36,7 +36,12 @@ public class Video {
 			media += nota;
 			contador += 1;
 		}
-		media = Math.round(media/contador);
+		if(contador == 0) {
+			media = 0;
+		}
+		else {
+			media = Math.round(media/contador);
+		}
 		return media;
 	}
 }

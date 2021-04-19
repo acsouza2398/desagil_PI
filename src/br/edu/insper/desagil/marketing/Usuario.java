@@ -1,5 +1,6 @@
 package br.edu.insper.desagil.marketing;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
@@ -9,9 +10,9 @@ public class Usuario {
 	private Produto produto;
 	private Usuario usuario;
 	
-	public Usuario(String nome, List<Video> videos) {
+	public Usuario(String nome) {
 		this.nome = nome;
-		this.videos = videos;
+		this.videos = new ArrayList<Video>();
 	}
 	
 	public Video postaVideo(Integer id, Produto produto) {

@@ -6,7 +6,7 @@ public class Vendedor extends Usuario {
 	private String nome;
 	
 	public Vendedor(String nome, List<Video> videos, List<Produto> produtos) {
-		super(nome, videos);
+		super(nome);
 		this.produtos = produtos;
 	}
 	
